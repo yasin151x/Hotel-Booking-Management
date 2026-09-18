@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Royal Stay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Royal<span>Stay</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Book Now</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Admin Dashboard</h1>
+    <p>Manage all hotel reservations</p>
+
+    <button class="logout-btn" onclick="logoutAdmin()">
+        Logout
+    </button>
+</section>
+
+<section class="dashboard-section">
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>Total Bookings</h3>
+            <h2 id="totalBookings">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Revenue</h3>
+            <h2 id="totalRevenue">৳0</h2>
+        </div>
+
+        <div class="stat-card">
+            <h3>Confirmed Bookings</h3>
+            <h2 id="confirmedBookings">0</h2>
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <h2>Booking Records</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Phone</th>
+                        <th>Room</th>
+                        <th>Check-in</th>
+                        <th>Check-out</th>
+                        <th>Guests</th>
+                        <th>Nights</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="bookingTableBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="search-box">
+    <input
+        type="text"
+        id="bookingSearch"
+        placeholder="Search by customer name, phone or room..."
+    >
+</div>
+
+        <p id="noBookings" class="no-bookings">
+            No bookings available yet.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Royal Stay Hotel. All Rights Reserved.</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

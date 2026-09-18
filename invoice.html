@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Booking Invoice - RoyalStay</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="invoice-page">
+
+    <div class="invoice-container">
+
+        <div class="invoice-header">
+
+            <h1>RoyalStay Hotel</h1>
+
+            <p>Booking Invoice</p>
+
+        </div>
+
+
+        <div class="invoice-info">
+
+            <h3>Booking Information</h3>
+
+            <p>
+                <strong>Booking ID:</strong>
+                <span id="invoiceId"></span>
+            </p>
+
+            <p>
+                <strong>Guest Name:</strong>
+                <span id="guestName"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="guestEmail"></span>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <span id="guestPhone"></span>
+            </p>
+
+            <p>
+                <strong>Guests:</strong>
+                <span id="guestCount"></span>
+            </p>
+
+        </div>
+
+
+        <div class="invoice-info">
+
+            <h3>Stay Information</h3>
+
+            <p>
+                <strong>Room:</strong>
+                <span id="guestRoom"></span>
+            </p>
+
+            <p>
+                <strong>Check-in:</strong>
+                <span id="guestCheckin"></span>
+            </p>
+
+            <p>
+                <strong>Check-out:</strong>
+                <span id="guestCheckout"></span>
+            </p>
+
+        </div>
+
+
+        <div class="invoice-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Room</th>
+                        <th>Price/Night</th>
+                        <th>Nights</th>
+                        <th>Total</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td id="invoiceRoom"></td>
+
+                        <td id="invoicePrice"></td>
+
+                        <td id="invoiceNights"></td>
+
+                        <td id="invoiceTotal"></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- PAYMENT INFORMATION -->
+
+        <div class="invoice-payment">
+
+            <h3>Payment Information</h3>
+
+            <p>
+                <strong>Payment Method:</strong>
+                <span id="invoicePaymentMethod"></span>
+            </p>
+
+            <p>
+                <strong>Transaction ID:</strong>
+                <span id="invoiceTransactionId"></span>
+            </p>
+
+            <p>
+                <strong>Payment Status:</strong>
+
+                <span
+                    id="invoicePaymentStatus"
+                    class="payment-paid"
+                >
+                </span>
+
+            </p>
+
+        </div>
+
+
+        <div class="invoice-total">
+
+            <h2>
+                Grand Total:
+                <span id="finalAmount"></span>
+            </h2>
+
+        </div>
+
+
+        <div class="invoice-buttons">
+
+            <button
+                onclick="window.print()"
+                class="submit-btn"
+            >
+                🖨️ Print / Save PDF
+            </button>
+
+
+            <a
+                href="index.html"
+                class="home-btn"
+            >
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1645 @@
+/* =========================
+   ROYAL STAY - LUXURY CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    /* MAIN WEBSITE BACKGROUND */
+    background:
+        linear-gradient(
+            135deg,
+            #171717 0%,
+            #29241e 25%,
+            #f3eadc 55%,
+            #e9dcc8 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 75px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080808,
+            #24201b,
+            #080808
+        );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,0.35);
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #d4af6a;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #d4af6a;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.65)
+        ),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d4af6a,
+            #a77b39
+        );
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    padding: 85px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.70),
+            rgba(0,0,0,0.80)
+        ),
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom:
+        3px solid #c49b63;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    color: #ddd;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.features,
+.rooms-section,
+.booking-section,
+.dashboard-section {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.96),
+            rgba(239,229,214,0.96)
+        );
+
+    padding: 75px 7%;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.features h2,
+.rooms-section h2,
+.about h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #29241e;
+
+    margin-bottom: 45px;
+}
+
+.features h2::after,
+.rooms-section h2::after,
+.about h2::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 4px;
+
+    margin: 14px auto 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a77b39,
+            #d4af6a
+        );
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.9);
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border:
+        1px solid rgba(196,155,99,0.25);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    color: #b3874a;
+
+    margin: 15px 0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #211d18,
+            #342b20
+        );
+
+    color: white;
+}
+
+.about h2 {
+    color: #fff;
+}
+
+.about p {
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   ROOMS
+========================= */
+
+.rooms-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.room-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.12);
+
+    transition: 0.4s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.18);
+}
+
+.room-card img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.room-card:hover img {
+    transform: scale(1.06);
+}
+
+.room-content {
+    padding: 25px;
+}
+
+.room-content h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+
+    color: #29241e;
+}
+
+.room-content p {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.room-price {
+    color: #b3874a;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+.room-btn {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c49b63,
+            #a77b39
+        );
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.15);
+
+    border-top:
+        5px solid #c49b63;
+}
+
+.booking-container h2 {
+    margin-bottom: 30px;
+
+    color: #29241e;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #444;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 6px;
+
+    background: #fff;
+
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #c49b63;
+
+    box-shadow:
+        0 0 0 3px rgba(196,155,99,0.15);
+}
+
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.room-availability {
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.available {
+    color: #218838;
+}
+
+.unavailable {
+    color: #dc3545;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-box {
+    margin: 25px 0;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf0,
+            #f0e3cf
+        );
+
+    border-left:
+        5px solid #c49b63;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 5px 20px rgba(196,155,99,0.12);
+}
+
+.price-box p {
+    margin-bottom: 10px;
+}
+
+.price-box h3 {
+    margin-top: 15px;
+
+    color: #a77b39;
+
+    font-size: 23px;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c49b63,
+            #a77b39
+        );
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(196,155,99,0.35);
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-section {
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171717,
+            #403326,
+            #e9dcc8
+        );
+}
+
+.login-container {
+    width: 400px;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.35);
+}
+
+.login-container h2 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #29241e;
+}
+
+.login-error {
+    color: #dc3545;
+
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-section {
+    min-height: 70vh;
+}
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+    font-size: 30px;
+
+    color: #29241e;
+}
+
+.logout-btn {
+    background: #b52a37;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border-top:
+        4px solid #c49b63;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+    color: #777;
+
+    margin-bottom: 15px;
+}
+
+.stat-card p {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #b3874a;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.booking-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1100px;
+}
+
+.booking-table th,
+.booking-table td {
+    padding: 13px;
+
+    border-bottom:
+        1px solid #eee;
+
+    text-align: left;
+}
+
+.booking-table th {
+    background:
+        linear-gradient(
+            90deg,
+            #171717,
+            #30271d
+        );
+
+    color: white;
+}
+
+.status {
+    background: #e9f7ef;
+
+    color: #218838;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+}
+
+.cancel-btn {
+    background: #f0ad4e;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #dc3545;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   INVOICE
+========================= */
+
+.invoice-page {
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171717,
+            #473a2c,
+            #e9dcc8
+        );
+}
+
+.invoice-box {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 50px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.25);
+
+    border-radius: 10px;
+}
+
+.invoice-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.invoice-title {
+    text-align: right;
+}
+
+.invoice-title h1 {
+    color: #b3874a;
+}
+
+.invoice-box hr {
+    border: none;
+
+    border-top:
+        1px solid #ddd;
+
+    margin: 30px 0;
+}
+
+.invoice-info {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    margin-bottom: 40px;
+}
+
+.invoice-info h3 {
+    color: #b3874a;
+
+    margin-bottom: 15px;
+}
+
+.invoice-info p {
+    margin-bottom: 10px;
+
+    color: #555;
+}
+
+.invoice-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+}
+
+.invoice-table th {
+    background: #222;
+
+    color: white;
+}
+
+.invoice-total {
+    text-align: right;
+
+    margin-top: 30px;
+}
+
+.invoice-total h2 {
+    color: #b3874a;
+}
+
+.invoice-status {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #e9f7ef;
+
+    color: #218838;
+
+    border-radius: 5px;
+}
+
+.invoice-footer {
+    text-align: center;
+
+    margin-top: 50px;
+
+    color: #777;
+
+    line-height: 1.8;
+}
+
+.invoice-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.print-btn,
+.home-btn {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.print-btn {
+    background: #c49b63;
+
+    color: white;
+}
+
+.home-btn {
+    background: #222;
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background:
+        linear-gradient(
+            90deg,
+            #080808,
+            #29231d,
+            #080808
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px;
+
+    border-top:
+        2px solid #c49b63;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .rooms-container,
+    .feature-container,
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-container {
+        padding: 25px;
+    }
+
+    .invoice-box {
+        padding: 25px;
+    }
+
+    .invoice-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .invoice-title {
+        text-align: left;
+    }
+
+    .invoice-info {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .invoice-buttons {
+        flex-direction: column;
+    }
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .invoice-page {
+        padding: 0;
+
+        background: white;
+    }
+
+    .invoice-box {
+        box-shadow: none;
+
+        max-width: 100%;
+    }
+
+    .invoice-buttons {
+        display: none;
+    }
+}
+
+/* =====================================================
+   DARK MODE TOGGLE
+===================================================== */
+
+/* Theme Button */
+
+.theme-toggle {
+    border: none;
+    outline: none;
+
+    padding: 9px 15px;
+
+    margin-left: 12px;
+
+    border-radius: 25px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   DARK THEME
+===================================================== */
+
+body.dark-theme {
+
+    background: #111827 !important;
+
+    color: #f3f4f6 !important;
+}
+
+
+/* Navbar */
+
+body.dark-theme .navbar {
+
+    background: #0b1120 !important;
+}
+
+
+body.dark-theme .navbar a {
+
+    color: #f3f4f6 !important;
+}
+
+
+body.dark-theme .navbar a:hover {
+
+    color: #f59e0b !important;
+}
+
+
+/* Hero */
+
+body.dark-theme .hero {
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.70),
+            rgba(0,0,0,0.70)
+        ) !important;
+}
+
+
+/* Page Header */
+
+body.dark-theme .page-header {
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.70),
+            rgba(0,0,0,0.70)
+        ) !important;
+
+    color: #fff !important;
+}
+
+
+/* Sections */
+
+body.dark-theme section {
+
+    background: transparent;
+}
+
+
+/* Cards */
+
+body.dark-theme .feature-card,
+body.dark-theme .room-card,
+body.dark-theme .about-content,
+body.dark-theme .booking-container,
+body.dark-theme .login-container,
+body.dark-theme .invoice-container,
+body.dark-theme .stat-card {
+
+    background: #1f2937 !important;
+
+    color: #f3f4f6 !important;
+
+    border-color: #374151 !important;
+}
+
+
+/* Headings */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+
+    color: #ffffff !important;
+}
+
+
+/* Paragraph */
+
+body.dark-theme p {
+
+    color: #d1d5db !important;
+}
+
+
+/* Forms */
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+
+    background: #111827 !important;
+
+    color: #ffffff !important;
+
+    border-color: #4b5563 !important;
+}
+
+
+body.dark-theme input::placeholder {
+
+    color: #9ca3af !important;
+}
+
+
+/* Booking */
+
+body.dark-theme .availability-message {
+
+    background: #111827 !important;
+}
+
+
+/* Dashboard */
+
+body.dark-theme table {
+
+    background: #1f2937 !important;
+
+    color: #f3f4f6 !important;
+}
+
+
+body.dark-theme th {
+
+    background: #111827 !important;
+
+    color: #ffffff !important;
+}
+
+
+body.dark-theme td {
+
+    border-color: #374151 !important;
+
+    color: #e5e7eb !important;
+}
+
+
+body.dark-theme tr:hover {
+
+    background: #273449 !important;
+}
+
+
+/* Search */
+
+body.dark-theme .search-box input {
+
+    background: #111827 !important;
+
+    color: #fff !important;
+}
+
+
+/* Footer */
+
+body.dark-theme footer {
+
+    background: #030712 !important;
+
+    color: #d1d5db !important;
+}
+
+
+/* Invoice */
+
+body.dark-theme .invoice-header {
+
+    background: #111827 !important;
+
+    color: #fff !important;
+}
+
+
+/* Dark button */
+
+body.dark-theme .theme-toggle {
+
+    background: #f5f5f5;
+
+    color: #111;
+
+}
+
+
+/* =====================================================
+   DARK MODE RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .theme-toggle {
+
+        margin-left: 5px;
+
+        padding: 7px 11px;
+
+        font-size: 12px;
+    }
+
+}
+
+/* =====================================================
+   PAYMENT SYSTEM
+===================================================== */
+
+.payment-section {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.7);
+
+    border: 1px solid #ddd;
+}
+
+
+.payment-section h2 {
+
+    margin-bottom: 8px;
+}
+
+
+.payment-note {
+
+    margin-bottom: 20px;
+
+    color: #777;
+}
+
+
+.payment-extra {
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: rgba(245,245,245,0.8);
+}
+
+
+.card-row {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.card-row > div {
+
+    flex: 1;
+}
+
+
+.payment-status {
+
+    margin-top: 15px;
+
+    font-weight: 600;
+
+    color: #555;
+}
+
+
+/* Invoice payment */
+
+.invoice-payment {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #f7f7f7;
+}
+
+
+.invoice-payment h3 {
+
+    margin-bottom: 12px;
+}
+
+
+.invoice-payment p {
+
+    margin: 8px 0;
+}
+
+
+.payment-paid {
+
+    font-weight: bold;
+
+    color: #16803c;
+}
+
+
+/* Dashboard payment badge */
+
+.payment-badge {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.payment-badge.paid {
+
+    background: #dff6e7;
+
+    color: #137333;
+}
+
+
+.payment-badge.pending {
+
+    background: #fff3cd;
+
+    color: #856404;
+}
+
+
+/* Home button */
+
+.home-btn {
+
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    margin-left: 10px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    background: #222;
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   DARK MODE PAYMENT
+===================================================== */
+
+body.dark-theme .payment-section {
+
+    background: #1f2937;
+
+    border-color: #374151;
+}
+
+
+body.dark-theme .payment-extra {
+
+    background: #111827;
+}
+
+
+body.dark-theme .payment-note {
+
+    color: #cbd5e1;
+}
+
+
+body.dark-theme .payment-status {
+
+    color: #e5e7eb;
+}
+
+
+body.dark-theme .invoice-payment {
+
+    background: #111827;
+}
+
+
+body.dark-theme .home-btn {
+
+    background: #f3f4f6;
+
+    color: #111827;
+}
+
+
+body.dark-theme .payment-badge.pending {
+
+    background: #4a3b12;
+
+    color: #facc15;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .card-row {
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .home-btn {
+
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+
+}
