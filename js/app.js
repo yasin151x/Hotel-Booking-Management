@@ -914,68 +914,59 @@ function loadDashboard() {
 
             row.innerHTML = `
 
-                <td>${booking.id}</td>
+    <td>${booking.id}</td>
 
-                <td>${booking.name}</td>
+    <td>${booking.name}</td>
 
-                <td>${booking.room}</td>
+    <td>${booking.phone || "N/A"}</td>
 
-                <td>${booking.checkin}</td>
+    <td>${booking.room}</td>
 
-                <td>${booking.checkout}</td>
+    <td>${booking.checkin}</td>
 
-                <td>
-                    ৳${Number(
-                        booking.total
-                    ).toLocaleString()}
-                </td>
+    <td>${booking.checkout}</td>
 
-                <td>
-                    ${booking.paymentMethod || "N/A"}
-                </td>
+    <td>${booking.guests || "N/A"}</td>
 
-                <td>
-                    <span class="payment-badge ${
-                        booking.paymentStatus === "Paid"
-                        ? "paid"
-                        : "pending"
-                    }">
-                        ${booking.paymentStatus || "Pending"}
-                    </span>
-                </td>
+    <td>${booking.nights || "N/A"}</td>
 
-                <td>
-                    <span class="status ${
-                        booking.status === "Cancelled"
-                        ? "cancelled"
-                        : "confirmed"
-                    }">
-                        ${booking.status}
-                    </span>
-                </td>
+    <td>
+        ৳${Number(booking.total || 0).toLocaleString()}
+    </td>
 
-                <td>
+    <td>
+        <span class="status ${
+            booking.status === "Cancelled"
+                ? "cancelled"
+                : "confirmed"
+        }">
+            ${booking.status}
+        </span>
+    </td>
 
-                    ${
-                        booking.status !== "Cancelled"
-                        ?
-                        `<button
-                            class="cancel-btn"
-                            onclick="cancelBooking('${booking.id}')">
-                            Cancel
-                        </button>`
-                        :
-                        ""
-                    }
+    <td>
 
+        ${
+            booking.status !== "Cancelled"
+                ? `
                     <button
-                        class="delete-btn"
-                        onclick="deleteBooking('${booking.id}')">
-                        Delete
+                        class="cancel-btn"
+                        onclick="cancelBooking('${booking.id}')">
+                        Cancel
                     </button>
+                  `
+                : ""
+        }
 
-                </td>
-            `;
+        <button
+            class="delete-btn"
+            onclick="deleteBooking('${booking.id}')">
+            Delete
+        </button>
+
+    </td>
+
+`;
 
 
             tableBody.appendChild(row);
